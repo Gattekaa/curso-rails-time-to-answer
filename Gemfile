@@ -19,11 +19,23 @@ gem "puma", "~> 5.0"
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
+gem 'font-awesome-sass'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
-gem "turbo-rails"
+#gem "turbo-rails"
 
 # Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
 gem "stimulus-rails"
+
+gem 'jquery-rails'
+
+gem 'metismenu-rails', github: 'lanvige/metismenu-rails'
+
+gem 'sb_admin_2_rails'
+
+gem "sassc-rails"
+
+gem 'bootstrap-sass', '3.3.6' 
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
