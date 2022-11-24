@@ -111,6 +111,7 @@ GEM
       warden (~> 1.2.3)
     erubi (1.11.0)
     execjs (2.8.1)
+    fastclick-rails (1.0.1)
     ffi (1.15.5)
     font-awesome-sass (5.9.0)
       sassc (>= 1.11)
@@ -153,6 +154,7 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
+    nprogress-rails (0.2.0.2)
     orm_adapter (0.5.0)
     popper_js (1.16.1)
     public_suffix (5.0.0)
@@ -271,11 +273,14 @@ DEPENDENCIES
   capybara
   debug
   devise
+  fastclick-rails
   font-awesome-sass
   importmap-rails
   jbuilder
   jquery-rails
   metismenu-rails!
+  nprogress-rails
+  popper_js
   puma (~> 5.0)
   rails (~> 7.0.4)
   rails-i18n

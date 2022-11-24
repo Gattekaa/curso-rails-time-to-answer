@@ -21,6 +21,12 @@ gem "importmap-rails"
 
 gem 'font-awesome-sass'
 
+gem 'fastclick-rails'
+
+gem 'nprogress-rails'
+
+gem 'popper_js'
+
 # Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 #gem "turbo-rails"
 
