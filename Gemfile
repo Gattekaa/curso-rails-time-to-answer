@@ -67,6 +67,8 @@ gem 'rails-i18n'
 
 gem 'tty-spinner'
 
+gem 'faker'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
