@@ -14,7 +14,11 @@
                     <tr role="row">
                         <th class="sorting sorting_asc" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 165px;" aria-sort="ascending" aria-label="ID: activate to sort column descending">ID</th>
                         <th class="sorting" tabindex="0" aria-controls="dataTable" rowspan="1" colspan="1" style="width: 253px;" aria-label="Email: activate to sort column ascending">Email</th>
-                        <th></th>
+                        <th>
+                        <%= link_to new_admins_backoffice_admin_path, class:"btn btn-success btn-circle" do %>
+                            <i class="fas fa-plus"></i>
+                        <% end %>
+                        </th>
                     </tr>
                 </thead>
                 <tbody>
