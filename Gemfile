@@ -69,6 +69,8 @@ gem 'tty-spinner'
 
 gem 'faker'
 
+gem 'kaminari'
+gem 'kaminari-i18n'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
