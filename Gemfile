@@ -23,6 +23,8 @@ gem 'font-awesome-sass'
 
 gem 'fastclick-rails'
 
+gem "cocoon"
+
 gem 'nprogress-rails'
 
 gem 'popper_js'
