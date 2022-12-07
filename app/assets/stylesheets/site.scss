@@ -1,6 +1,17 @@
 
 /*
- *= require bootstrap/dist/css/bootstrap
- *= require surface-fix
- *= require navbar
+*= require bootstrap/dist/css/bootstrap
+*= require surface-fix
+*= require navbar
+*= require font-awesome/css/font-awesome
+
 */
+
+.navbarButton {
+    background-color: inherit;
+    border-color: transparent;
+}
+
+.navbarButton:hover {
+    background-color: #e7e7e7;
+}
