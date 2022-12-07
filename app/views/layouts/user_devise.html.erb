@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>TimeToAnswer</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application" %>
+    <%= stylesheet_link_tag "user_devise" %>
+
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="../vendors/animate.css/animate.min.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="login">
+      <%= yield %>
+
+    <%= javascript_include_tag 'application'%>
+    <%= javascript_include_tag 'user_devise'%>
+    <%= javascript_importmap_tags %>
+
+    <% if flash %>
+        <% flash.each do |key, value| %>
+            <%= javascript_tag do %>
+                $.bootstrapGrowl('<%= value %>', {
+                    type: 'danger',
+                    align: 'right',
+                    allow_dismiss: true,
+                    stackup_spacing: 10
+                });
+            <% end %>
+        <% end %>
+    <% end %>
+  </body>
+</html>

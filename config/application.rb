@@ -32,6 +32,8 @@ module TimeToAnswer
     # require "rails/test_unit/railtie"
     config.generators.system_tests = nil
 
+    config.web_console.whitelisted_ips = '10.0.2.20'
+
   end
 end
 
