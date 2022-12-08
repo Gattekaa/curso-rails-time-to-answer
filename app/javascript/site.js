@@ -3,3 +3,4 @@
 //= require bootstrap.bundle.min.js
 //= require surface-fix
 //= require bootstrap-growl-ifightcrime/jquery.bootstrap-growl
+//= require rails-ujs

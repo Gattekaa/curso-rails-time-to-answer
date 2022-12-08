@@ -1,0 +1,24 @@
+var submitButton = document.querySelector('#submit_<%= @answer.question_id %>')
+
+submitButton.classList.remove('btn-default')
+submitButton.classList.remove('btn-success')
+submitButton.classList.remove('btn-danger')
+
+if (<%= @answer.correct %>) {
+    submitButton.classList.add('btn-success')
+    $.bootstrapGrowl('Você acertou!', {
+        type: 'success',
+        align: 'right',
+        allow_dismiss: true,
+        stackup_spacing: 10
+    });
+} else {
+    submitButton.classList.add('btn-danger')
+    $.bootstrapGrowl('Você errou!', {
+        type: 'danger',
+        align: 'right',
+        allow_dismiss: true,
+        stackup_spacing: 10
+    });
+}
+
