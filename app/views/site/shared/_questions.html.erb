@@ -1,14 +1,28 @@
 <% @questions.each do |question| %>
+  <%= form_with url: site_answer_path, local: true do |form| %>
     <div class="panel panel-default">
       <div class="panel-heading">
         <h3 class="panel-title"><%= question.description %></h3>
       </div>
       <div class="panel-body">
-        <% question.answers.each do |answer| %>
-            <li><%= answer.description %></li>
-        <% end %>
+        <ul style="list-style:none">
+          <% question.answers.each do |answer| %>
+            <li>
+              <div class="radio">
+                <label>
+                  <%= radio_button_tag 'answer', answer.id %>
+                  <%= answer.description %>
+                </label>
+              </div>
+            </li> 
+          <% end %>
+          <li>
+            <%= form.submit "Responder", class:"btn btn-default" %>
+          <li>
+        </ul>
       </div>
     </div>
+  <%end%>
 <% end %>
 
 
