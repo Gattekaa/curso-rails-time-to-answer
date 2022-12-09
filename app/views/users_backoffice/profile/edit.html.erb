@@ -41,6 +41,27 @@
                             <%= form.text_field :email, class:"form-control", readonly: true %>
                         </div>
                     </div>
+                    <%= form.fields_for :user_profile do |profile_form| %>
+                        <div class="item form-group">
+                            <%= profile_form.label :address, class:"col-form-label col-md-3 col-sm-3 label-align" %>
+                            <div class="col-md-6 col-sm-6 ">
+                                <%= profile_form.text_field :address, class:"form-control", placeholder:"Senha" %>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <%= profile_form.label :gender, class:"col-form-label col-md-3 col-sm-3 label-align" %>
+                            <div class="col-md-6 col-sm-6 ">
+                                <%= profile_form.text_field :gender, class:"form-control", placeholder:"Senha" %>
+                            </div>
+                        </div>
+                        <div class="item form-group">
+                            <%= profile_form.label :birthdate, class:"col-form-label col-md-3 col-sm-3 label-align" %>
+                            <div class="col-md-6 col-sm-6 ">
+                                <%= profile_form.text_field :birthdate, class:"form-control", placeholder:"Senha" %>
+                            </div>
+                        </div>
+                    <% end %>
+                    
                     <div class="item form-group">
                         <%= form.label :password, class:"col-form-label col-md-3 col-sm-3 label-align" %>
                         <div class="col-md-6 col-sm-6 ">
@@ -53,6 +74,7 @@
                             <%= form.password_field :password_confirmation, class:"form-control", placeholder:"Senha" %>
                         </div>
                     </div>
+                    
                     <div class="ln_solid"></div>
                     <div class="item form-group" >
                         <div class="col-md-6 col-sm-6 col-xs-12 offset-md-3" style="display:flex; width: 100%; justify-content: center;">
