@@ -61,16 +61,27 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item form-group">
-                            <%= profile_form.label :gender, class:"col-form-label col-md-3 col-sm-3 label-align" %>
-                            <div class="col-md-6 col-sm-6 ">
-                                <%= profile_form.text_field :gender, class:"form-control", placeholder:"Senha" %>
-                            </div>
-                        </div>
+
+                          <%= javascript_tag do %>
+                            var labels = document.querySelectorAll('div#gender label');
+
+                            labels.forEach((label) => {
+                              label.addEventListener('click', () => {
+                                label.classList.remove('btn-default');
+                                label.classList.add('btn-primary');
+                                labels.forEach((lbl) => {
+                                    if(lbl !== label) {
+                                        lbl.classList.remove('btn-primary');
+                                        lbl.classList.add('btn-default');
+                                    }
+                                })
+                              })
+                            })
+                          <% end %>
                         <div class="item form-group">
                             <%= profile_form.label :birthdate, class:"col-form-label col-md-3 col-sm-3 label-align" %>
                             <div class="col-md-6 col-sm-6 ">
-                                <%= profile_form.text_field :birthdate, class:"form-control", placeholder:"Senha" %>
+                                <%= profile_form.date_field :birthdate, class:"form-control", placeholder:"Senha" %>
                             </div>
                         </div>
                     <% end %>

@@ -4,7 +4,7 @@ class CreateUserProfiles < ActiveRecord::Migration[7.0]
       t.string :address
       t.string :gender
       t.date :birthdate
-      t.references :user, null: false, foreign_key: true
+      t.references :user, foreign_key: true
 
       t.timestamps
     end
