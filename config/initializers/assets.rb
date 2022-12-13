@@ -30,4 +30,5 @@ Rails.application.config.assets.precompile += %w( sb-admin-2.js sb-admin-2.css
                                                   jquery.easing.min.js
                                                   bootstrap.bundle.min.js )
 # /vendor/assets
-Rails.application.config.assets.precompile += %w( jquery-2.2.3/dist/jquery.js )
+Rails.application.config.assets.precompile += %w( jquery-2.2.3/dist/jquery.js
+                                                  custom.css )
