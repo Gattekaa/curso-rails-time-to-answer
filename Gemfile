@@ -43,6 +43,8 @@ gem 'sb_admin_2_rails'
 
 gem "sassc-rails"
 
+gem 'prawn-rails'
+
 #gem 'bootstrap-sass', '3.3.6' 
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
